@@ -27,20 +27,10 @@ export class HomeComponent implements OnInit {
           path.style.strokeDashoffset = (length - drawLength).toString() || '';
         }
       });
-      // $('.page-3').on('mousewheel',function(){
-      //   var scrollPercentage = 0;
-      //   var top = $(window).scrollTop() || 0;
-      //   scrollPercentage = (top+this.clientHeight/3-this.offsetTop)/this.clientHeight;
-      //   var length  = pathLength || 0;
-      //   var drawLength = length * scrollPercentage;
-      //   if (path!=null){
-      //     path.style.strokeDashoffset = (length - drawLength).toString() || '';
-      //   }
-      // });
     }
     $(window).on('scroll',()=>{
       var i=1;
-      while (i<22){
+      while (i<28){
       var element = document.getElementById(i.toString());
       var top = window.innerHeight;
       var clh = 0
