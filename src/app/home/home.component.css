@@ -76,11 +76,12 @@
     overflow-x: hidden;
     height: 100vh;
     background-size: cover;
-    background-image: url('../../assets/images/bg_2.png');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922 ), url('../../assets/images/bg_2.png');
 }
 
 .page-1 {
-    background-image: url('../../assets/images/bg_cover.svg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922 ), url('../../assets/images/bg_2.png');
+    background-size: cover;
     width: 100vw;
     overflow-y: scroll;
     height: 100vh;
@@ -145,36 +146,37 @@
 .page-2 {
     width: 100vw;
     font-family: 'Roboto Condensed';
-    height: 100vh;
-    background-color: #0F0922;
+    padding-bottom: 35vh;
+    background: linear-gradient(#0F0922 85%, #000000);
 }
 .abt-img{
-    width: 40vw;
+    width: 45vw;
 }
 .abt-content{
-    width: fit-content;
+    width: 68%;
     position: relative;
     top: 15vh;
-    left: 12vw;
+    left: 15vw;
     color: white;
 }
 .abt-head{
     color: #7630FF;
-    font-size: 3vw;
+    font-size: 4.25vw;
     font-weight: bold;
+    margin-bottom: 2.5vw;
 }
 .abt-head-text{
-    font-size: 1.6vw;
-    width: 62vw;
+    font-size: 1.85vw;
+    width: 100%;
 }
 .abt-desc-head{
     font-weight: bold;
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     color: #7630FF;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
 }
 .abt-desc-text{
-    font-size: 1.6vw;
+    font-size: 1.85vw;
     width: 33vw;
     margin-bottom: 6vh;
     color: white
