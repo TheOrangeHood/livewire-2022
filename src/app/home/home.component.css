@@ -79,12 +79,16 @@
 
 .page-3 {
     width: 100vw;
-    height: 100vh;
+    background: linear-gradient(#000000 85%, #0F0922) ;
+    padding-bottom: 20vh;
+    padding-top: 5vh;
+    position: relative;
 }
 
 .page-4 {
     width: 100vw;
-    height: 100vh;
+    background-color: #0F0922;
+    padding-bottom: 25vh;
 }
 
 .page-5 {
@@ -338,6 +342,181 @@ img.foot_logo{
     top: 83%;
 }
 #line{
+    height: 100%;
+    width: 100%;
+}
+.test-shine {
+    width: 95%;
+    height: 80%;
+    margin-left: 5%;
+    background-color: #337bb2;
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    }
+    
+    .test-shine:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 150%;
+    clip-path: polygon(0% 41.5%, 100% 33.1%,100% 88%,0% 96.7%);
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255,0.5) 100%,
+        rgba(255, 255, 255,0.5) 100%,
+        rgba(255, 255, 255,0.5) 100%,
+        rgba(255, 255, 255,0.5) 100%
+    );
+    }
+    
+    /* Hover state - trigger effect */
+    .test-shine:hover:after {
+    opacity: 1;
+    left: 150%;
+    transition-property: left, top, opacity;
+    transition-duration: 1s, 1s, 0.2s;
+    transition-timing-function: ease;
+    }
+    
+    /* Active state */
+    .test-shine:active:after {
+    opacity: 0;
+    }
+    
+.top-shine{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 12%;
+    opacity: 0;
+}
+h3.shine{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8vw;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: -2vw;
+}
+.shine-cont{
+    width: 30%;
+    height: 20vw;
+    position: relative;
+    overflow: hidden;
+}
+.sh1{
+    background-image: url('../../assets/images/parikrama 7.png');   
+    background-size: cover;
+}
+.sh2{
+    background-image: url('../../assets/images/pentagram 1.png');   
+    background-size: cover;
+}
+.sh3{
+    background-image: url('../../assets/images/kraken 2.png');   
+    background-size: cover;
+}
+.sh4{
+    background-image: url('../../assets/images/fi6s 1.png');   
+    background-size: cover;
+}
+.sh5{
+    background-image: url('../../assets/images/bhayanak 3.png');   
+    background-size: cover;
+}
+.sh6{
+    background-image: url('../../assets/images/smalltalk 1.png');   
+    background-size: cover;
+}
+.prize-top{
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-bottom: 1%;
+    opacity: 0;
+}
+.prize-bot{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+h3.prize-more{
+    margin: 0;
+    margin-top: 16vw;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2vw;
+    color: #FFFFFF;
+}
+.prize-card{
+    background: linear-gradient(180deg, #362972 0%, #21004B 100%);
+    width: 24%;
+    height: 22.5vw;
+    display: block;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+.prize1{
+    width: 32%;
+}
+h3.prize{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9vw;
+    color: #FFFFFF;
+    margin: 1vw 2vw 0 2vw;
+}
+p.prize-cont{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 1.2vw;
+    line-height: 112%;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 1vw 2vw 2vw 2vw;
+}
+img.prize-icon{
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 2vw;
+}
+img.music-icon{
+    position: absolute;
+    left: 41.5%;
+    top: 3.5vw;
+    width: 3vw;
+}
+.ball1{
+    position: absolute;
+    left: 88%;
+    width: 2vw;
+    background-color: #000000;
+}
+#b5{
+    top: 23%;
+}
+#b6{
+    top: 43%;
+}
+#b7{
+    top: 63%;
+}
+#b8{
+    top: 83%;
+}
+#line1{
     height: 100%;
     width: 100%;
 }
