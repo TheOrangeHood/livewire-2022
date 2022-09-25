@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.full-container {
+    overflow-x: hidden;
+}
+
 .navbar {
     width: 100vw;
     display: flex;
@@ -35,7 +40,7 @@
     color: white;
 }
 
-.nav-icon:hover{
+.nav-icon:hover {
     color: #7630FF;
 }
 
@@ -50,6 +55,7 @@
     background: #7630FF;
     font-weight: 700;
     border: none;
+    cursor: pointer;
     font-size: 1.3vw;
     /* font-family: 'Roboto Condensed'; */
     font-family: 'Roboto Condensed';
@@ -58,9 +64,16 @@
     color: white;
 }
 
+.register:hover {
+    background-color: white;
+    color: #7630FF;
+}
+
+/* page1 */
 .page-1-bg {
     background-color: black;
     width: 100vw;
+    overflow-x: hidden;
     height: 100vh;
     background-size: cover;
     background-image: url('../../assets/images/bg_2.png');
@@ -69,14 +82,112 @@
 .page-1 {
     background-image: url('../../assets/images/bg_cover.svg');
     width: 100vw;
+    overflow-y: scroll;
     height: 100vh;
 }
+.page1{
+    height: 85vh;
+}
+.page1-text-container {
+    top: 25vh;
+    width: fit-content;
+    position: relative;
+    left: 12vw;
+    color: white;
+}
 
+.sub-head {
+    font-size: 1.5vw;
+    font-family: 'Roboto Condensed';
+    width: 20vw;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.main-head {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: "Nightcore demo";
+    font-size: 12vw;
+    animation: shade 2s infinite alternate both;
+    animation-timing-function: ease-in;
+    text-shadow: 0px 0px 0 white;
+    /* font-weight: bold; */
+}
+
+@keyframes shade {
+    0% {
+        text-shadow: 0 0 0 white;
+    }
+
+    100% {
+        text-shadow: 0 0 30px white;
+    }
+}
+
+.margin-div {
+    width: 10vw;
+    height: 0.5vh;
+    background: white;
+    opacity: 0.5;
+    /* border: 1vh solid; */
+    margin-bottom: 2vh;
+}
+
+/* .page1-end{
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+  
+    z-index: 2;
+    background-image: linear-gradient(180deg, rgba(9, 6, 22, 0) 31.77%, #0F0922 100%);
+} */
 .page-2 {
     width: 100vw;
+    font-family: 'Roboto Condensed';
     height: 100vh;
+    background-color: #0F0922;
 }
-
+.abt-img{
+    width: 40vw;
+}
+.abt-content{
+    width: fit-content;
+    position: relative;
+    top: 15vh;
+    left: 12vw;
+    color: white;
+}
+.abt-head{
+    color: #7630FF;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.abt-head-text{
+    font-size: 1.6vw;
+    width: 62vw;
+}
+.abt-desc-head{
+    font-weight: bold;
+    font-size: 2.3vw;
+    color: #7630FF;
+    margin-bottom: 4vh;
+}
+.abt-desc-text{
+    font-size: 1.6vw;
+    width: 33vw;
+    margin-bottom: 6vh;
+    color: white
+}
+.width{
+    width: fit-content;
+}
+.page-2-flex-content{
+    display: flex;
+    position: relative;
+    top: 18vh;
+    margin-top: 3vh;
+}
 .page-3 {
     width: 100vw;
     background: linear-gradient(#000000 85%, #0F0922) ;
@@ -93,7 +204,7 @@
 
 .page-5 {
     width: 100vw;
-    background: linear-gradient( #0F0922 85%, #050111) ;
+    background: linear-gradient(#0F0922 85%, #050111);
     position: relative;
     padding-bottom: 10vh;
 }
@@ -110,17 +221,19 @@
     padding-bottom: 15vh;
 }
 
-.full-container{
+.full-container {
     overflow-x: hidden;
 }
-img.left-bars{
+
+img.left-bars {
     height: 75%;
     width: 10%;
     position: absolute;
     left: 0;
     top: 10%;
 }
-h2.sched-head{
+
+h2.sched-head {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -133,7 +246,8 @@ h2.sched-head{
     margin-bottom: 2em;
     opacity: 0;
 }
-.schedule{
+
+.schedule {
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -142,11 +256,13 @@ h2.sched-head{
     margin-left: 18vw;
     opacity: 0;
 }
-.left-sched{
+
+.left-sched {
     width: 40%;
     direction: rtl;
 }
-h3.sub_head{
+
+h3.sub_head {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -156,7 +272,8 @@ h3.sub_head{
     margin: 0;
     margin-top: 1vh;
 }
-p.cont{
+
+p.cont {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -166,7 +283,8 @@ p.cont{
     color: #FFFFFF;
     margin: 0;
 }
-button.ticket{
+
+button.ticket {
     background: #7630FF;
     border-radius: 5px;
     font-family: 'Roboto Condensed';
@@ -181,23 +299,26 @@ button.ticket{
     padding: 0.6em 1.6em;
     margin-top: 1.5em;
 }
-img.right-sched{
+
+img.right-sched {
     width: 50%;
     height: inherit;
 }
-h2.reg_head{
+
+h2.reg_head {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 4.25vw;
     line-height: 5vw;
-    color: #FFFFFF;   
+    color: #FFFFFF;
     padding-top: 5vh;
     margin: 0;
     margin-left: 12%;
     opacity: 0;
 }
-h3.rule-head{
+
+h3.rule-head {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -208,12 +329,14 @@ h3.rule-head{
     margin-top: 1em;
     opacity: 0;
 }
-ul.rules{
+
+ul.rules {
     width: 70%;
     margin-left: 14%;
     opacity: 0;
 }
-li.rule{
+
+li.rule {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -222,36 +345,43 @@ li.rule{
     margin: 0;
     margin-bottom: 0.4em;
 }
-.band_info{
+
+.band_info {
     width: 75%;
     margin-left: 14%;
     opacity: 0;
 }
-.info_col{
+
+.info_col {
     display: flex;
     justify-content: space-between;
 }
-.info_form{
+
+.info_form {
     width: 50%;
     padding-right: 4%;
     padding-top: 1.5%;
 }
-.big_form{
+
+.big_form {
     width: 100%;
     padding-right: 4%;
     padding-top: 1.5%;
 }
-input.inp{
+
+input.inp {
     width: 100%;
     height: 3.25vw;
     border-radius: 5px;
 }
-textarea.inp{
+
+textarea.inp {
     width: 100%;
     height: 5vw;
     border-radius: 5px;
 }
-.reg_btn{
+
+.reg_btn {
     background: #7630FF;
     border-radius: 5px;
     font-family: 'Roboto Condensed';
@@ -267,34 +397,41 @@ textarea.inp{
     margin-top: 1.5em;
     width: 6em;
 }
-.partner{
+
+.partner {
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin-left: 12%;
     opacity: 0;
 }
-img.partner_img{
+
+img.partner_img {
     width: 19%;
 }
-.part-head{
+
+.part-head {
     margin-bottom: 1em !important;
 }
-img.left-line{
+
+img.left-line {
     margin: 12vh 11%;
 }
-.foot{
+
+.foot {
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin-left: 12%;
     opacity: 0;
 }
-.foot-logos{
+
+.foot-logos {
     display: flex;
     justify-content: space-between;
 }
-h3.foot-head{
+
+h3.foot-head {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -303,7 +440,8 @@ h3.foot-head{
     margin: 0;
     margin-bottom: 1em;
 }
-p.foot-cont{
+
+p.foot-cont {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -311,37 +449,46 @@ p.foot-cont{
     color: #FFFFFF;
     margin: 0;
 }
-a.foot-logo{
+
+a.foot-logo {
     width: 20%
 }
-img.foot_logo{
+
+img.foot_logo {
     width: 100%;
 }
-.line-container{
+
+.line-container {
     position: absolute;
     left: 45%;
     height: 83%;
     width: 0.5%;
 }
-.ball2{
+
+.ball2 {
     position: absolute;
     left: 44.3%;
     width: 2vw;
     background-color: #0F0922;
 }
-#b1{
+
+#b1 {
     top: 23%;
 }
-#b2{
+
+#b2 {
     top: 43%;
 }
-#b3{
+
+#b3 {
     top: 63%;
 }
-#b4{
+
+#b4 {
     top: 83%;
 }
-#line{
+
+#line {
     height: 100%;
     width: 100%;
 }
