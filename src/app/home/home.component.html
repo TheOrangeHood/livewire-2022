@@ -256,18 +256,18 @@
       <div class="band_info" id="22">
         <div class="info_col">
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="city" id="city" type="text" placeholder="City" />
+            <input class="form-control valid inp" name="city" id="city" type="text" placeholder="City" [(ngModel)] = "city"/>
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="band_name" id="band_name" type="text" placeholder="Band Name" />
+            <input class="form-control valid inp" name="band_name" id="band_name" [(ngModel)]="band_name" type="text" placeholder="Band Name" />
           </div>
         </div>
         <div class="info_col">
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="genre" id="genre" type="text" placeholder="Genre" />
+            <input class="form-control valid inp" name="genre" id="genre" type="text" placeholder="Genre" [(ngModel)] = "genre" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="email" id="email" type="email" placeholder="Band Email ID" />
+            <input class="form-control valid inp" name="email" id="email" type="email" placeholder="Band Email ID" [(ngModel)] = "emailid" />
           </div>
         </div>
       </div>
@@ -279,41 +279,41 @@
       <div class="band_info" id="24">
         <div class="info_col">
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="past_ach" id="past_ach" type="text"
+            <input class="form-control valid inp" name="past_ach" id="past_ach" type="text" [(ngModel)] = 'past_ach'
               placeholder="Past Achievements" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="num_mem" id="num_mem" type="number"
+            <input class="form-control valid inp" name="num_mem" id="num_mem" type="number" [(ngModel)] = "no_of_members"
               placeholder="Number of Members" />
           </div>
         </div>
         <div class="info_col">
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem1_name" id="mem1_name" type="text"
+            <input class="form-control valid inp" name="mem1_name" [(ngModel)] = "mem_name1" id="mem1_name" type="text"
               placeholder="Member Name 1" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem1_contact" id="mem1_contact" type="phone"
+            <input class="form-control valid inp" name="mem1_contact" [(ngModel)] = "mem_contact1" id="mem1_contact" type="phone"
               placeholder="Member Contact 1" />
           </div>
         </div>
         <div class="info_col">
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem2_name" id="mem2_name" type="text"
+            <input class="form-control valid inp" name="mem2_name" [(ngModel)] = "mem_name2" id="mem2_name" type="text"
               placeholder="Member Name 2" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem2_contact" id="mem2_contact" type="phone"
+            <input class="form-control valid inp" name="mem2_contact" [(ngModel)] = "mem_contact2" id="mem2_contact" type="phone"
               placeholder="Member Contact 2" />
           </div>
         </div>
         <div class="info_col">
           <div class="form-group big_form">
-            <textarea class="form-control w-100 inp" name="links" id="links" cols="30" rows="2"
+            <textarea class="form-control w-100 inp" name="links" id="links" cols="30" rows="2" [(ngModel)]="orignal_composition"
               placeholder="Links For All Original Music Like Singles/Albums&#10;(Please Separate by Comma)"></textarea>
           </div>
         </div>
-        <div class="reg_btn text-center">
+        <div class="reg_btn text-center" (click)="register()">
           <a class="boxed-btn3 wow fadeInUp" style="color: white;" data-wow-duration="1s"
             data-wow-delay=".6s">REGISTER</a>
         </div>

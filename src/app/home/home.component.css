@@ -77,19 +77,21 @@
     overflow-x: hidden;
     height: 100vh;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922 ), url('../../assets/images/bg_2.png');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922), url('../../assets/images/bg_2.png');
 }
 
-.page-1 {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922 ), url('../../assets/images/bg_2.png');
+/* .page-1 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, #0F0922), url('../../assets/images/bg_2.png');
     background-size: cover;
     width: 100vw;
     overflow-y: scroll;
     height: 100vh;
-}
-.page1{
+} */
+
+.page1 {
     height: 85vh;
 }
+
 .page1-text-container {
     top: 25vh;
     width: fit-content;
@@ -142,55 +144,64 @@
     padding-bottom: 35vh;
     background: linear-gradient(#0F0922 85%, #000000);
 }
-.abt-img{
+
+.abt-img {
     width: 45vw;
     opacity: 0;
 }
-.abt-content{
+
+.abt-content {
     width: 68%;
     position: relative;
     top: 15vh;
     left: 15vw;
     color: white;
 }
-.abt-head{
+
+.abt-head {
     color: #7630FF;
     font-size: 4.25vw;
     font-weight: bold;
     margin-bottom: 2.5vw;
     opacity: 0;
 }
-.abt-head-text{
+
+.abt-head-text {
     font-size: 1.85vw;
     width: 100%;
     opacity: 0;
 }
-.abt-desc-head{
+
+.abt-desc-head {
     font-weight: bold;
     font-size: 2.4vw;
     color: #7630FF;
     margin-bottom: 3vh;
     opacity: 0;
 }
-.abt-desc-text{
+
+.abt-desc-text {
     font-size: 1.85vw;
     width: 33vw;
     margin-bottom: 6vh;
     color: white;
     opacity: 0;
 }
-.width{
+
+.width {
     width: fit-content;
 }
-.page-2-flex-content{
+
+.page-2-flex-content {
     display: flex;
     position: relative;
     top: 18vh;
     margin-top: 3vh;
 }
+
 .page-3 {
     width: 100vw;
-    background: linear-gradient(#000000 85%, #0F0922) ;
+    background: linear-gradient(#000000 85%, #0F0922);
     padding-bottom: 20vh;
     padding-top: 5vh;
     position: relative;
@@ -300,7 +311,8 @@ button.ticket {
     padding: 0.6em 1.6em;
     margin-top: 1.5em;
 }
-button.ticket:hover{
+
+button.ticket:hover {
     cursor: pointer;
     background-color: white;
     color: #7630FF;
@@ -498,6 +510,7 @@ img.foot_logo {
     height: 100%;
     width: 100%;
 }
+
 .test-shine {
     width: 95%;
     height: 80%;
@@ -506,51 +519,52 @@ img.foot_logo {
     background-repeat: no-repeat;
     display: inline-block;
     overflow: hidden;
-    }
-    
-    .test-shine:after {
+}
+.reg_btn{
+    opacity: 1 !important;
+}
+.test-shine:after {
     content: "";
     position: absolute;
     top: -50%;
     left: -60%;
     width: 20%;
     height: 150%;
-    clip-path: polygon(0% 41.5%, 100% 33.1%,100% 88%,0% 96.7%);
+    clip-path: polygon(0% 41.5%, 100% 33.1%, 100% 88%, 0% 96.7%);
     opacity: 0;
     transform: rotate(30deg);
-    
+
     background: rgba(255, 255, 255, 0.13);
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255,0.5) 100%,
-        rgba(255, 255, 255,0.5) 100%,
-        rgba(255, 255, 255,0.5) 100%,
-        rgba(255, 255, 255,0.5) 100%
-    );
-    }
-    
-    /* Hover state - trigger effect */
-    .test-shine:hover:after {
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.5) 100%,
+            rgba(255, 255, 255, 0.5) 100%,
+            rgba(255, 255, 255, 0.5) 100%,
+            rgba(255, 255, 255, 0.5) 100%);
+}
+
+/* Hover state - trigger effect */
+.test-shine:hover:after {
     opacity: 1;
     left: 150%;
     transition-property: left, top, opacity;
     transition-duration: 1s, 1s, 0.2s;
     transition-timing-function: ease;
-    }
-    
-    /* Active state */
-    .test-shine:active:after {
+}
+
+/* Active state */
+.test-shine:active:after {
     opacity: 0;
-    }
-    
-.top-shine{
+}
+
+.top-shine {
     display: flex;
     justify-content: space-between;
     width: 70%;
     margin-left: 12%;
     opacity: 0;
 }
-h3.shine{
+
+h3.shine {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -559,37 +573,45 @@ h3.shine{
     margin: 0;
     margin-top: -2vw;
 }
-.shine-cont{
+
+.shine-cont {
     width: 30%;
     height: 20vw;
     position: relative;
     overflow: hidden;
 }
-.sh1{
-    background-image: url('../../assets/images/parikrama 7.png');   
+
+.sh1 {
+    background-image: url('../../assets/images/parikrama 7.png');
     background-size: cover;
 }
-.sh2{
-    background-image: url('../../assets/images/pentagram 1.png');   
+
+.sh2 {
+    background-image: url('../../assets/images/pentagram 1.png');
     background-size: cover;
 }
-.sh3{
-    background-image: url('../../assets/images/kraken 2.png');   
+
+.sh3 {
+    background-image: url('../../assets/images/kraken 2.png');
     background-size: cover;
 }
-.sh4{
-    background-image: url('../../assets/images/fi6s 1.png');   
+
+.sh4 {
+    background-image: url('../../assets/images/fi6s 1.png');
     background-size: cover;
 }
-.sh5{
-    background-image: url('../../assets/images/bhayanak 3.png');   
+
+.sh5 {
+    background-image: url('../../assets/images/bhayanak 3.png');
     background-size: cover;
 }
-.sh6{
-    background-image: url('../../assets/images/smalltalk 1.png');   
+
+.sh6 {
+    background-image: url('../../assets/images/smalltalk 1.png');
     background-size: cover;
 }
-.prize-top{
+
+.prize-top {
     width: 72%;
     display: flex;
     justify-content: space-between;
@@ -597,12 +619,14 @@ h3.shine{
     margin-bottom: 1%;
     opacity: 0;
 }
-.prize-bot{
+
+.prize-bot {
     width: 75%;
     display: flex;
     justify-content: space-between;
 }
-h3.prize-more{
+
+h3.prize-more {
     margin: 0;
     margin-top: 16vw;
     font-family: 'Roboto Condensed';
@@ -611,7 +635,8 @@ h3.prize-more{
     font-size: 3.2vw;
     color: #FFFFFF;
 }
-.prize-card{
+
+.prize-card {
     background: linear-gradient(180deg, #362972 0%, #21004B 100%);
     width: 24%;
     height: 22.5vw;
@@ -620,10 +645,12 @@ h3.prize-more{
     border-radius: 10px;
     position: relative;
 }
-.prize1{
+
+.prize1 {
     width: 32%;
 }
-h3.prize{
+
+h3.prize {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -631,7 +658,8 @@ h3.prize{
     color: #FFFFFF;
     margin: 1vw 2vw 0 2vw;
 }
-p.prize-cont{
+
+p.prize-cont {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 275;
@@ -640,20 +668,24 @@ p.prize-cont{
     color: rgba(255, 255, 255, 0.5);
     margin: 1vw 2vw 2vw 2vw;
 }
-img.prize-icon{
+
+img.prize-icon {
     width: 35%;
     margin-left: 32.5%;
     margin-top: 2vw;
 }
-img.music-icon{
+
+img.music-icon {
     position: absolute;
     left: 41.5%;
     top: 3.5vw;
     width: 3vw;
 }
-.reg_btn{
+
+.reg_btn {
     opacity: 0;
 }
+
 .reg {
     background: #7630FF;
     font-weight: 700;
@@ -672,4 +704,96 @@ img.music-icon{
 .reg:hover {
     background-color: white;
     color: #7630FF;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-icons {
+        display: none;
+    }
+
+    .logo {
+        margin: 7vw 1vw 5vw 4vw;
+    }
+
+    .register {
+        padding: 1.5vw 5vw;
+        font-size: 4.3vw;
+        border-radius: 1.3vw;
+    }
+
+    .page-1-bg {
+        background-position-x: -191vw;
+        /* background-position-y: -5vw; */
+    }
+
+    .sub-head {
+        font-size: 5.5vw;
+        width: 76vw;
+    }
+
+    .margin-div {
+        width: 25vw;
+        height: 0.3vh;
+    }
+
+    .main-head {
+        font-size: 25vw;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .page-2 {
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    .abt-content {
+        left: 12vw;
+        width: 82%;
+        top: 5vh;
+    }
+
+    .abt-head {
+        font-size: 9.25vw;
+    }
+
+    .abt-head-text {
+        font-size: 4.85vw;
+    }
+
+    .page-2-flex-content {
+        flex-direction: column;
+        top: 5vh;
+    }
+
+    .abt-img {
+        width: 97vw;
+        margin-left: 3vw;
+    }
+
+    .abt-desc {
+        position: relative;
+        left: 12vw;
+    }
+
+    .abt-desc-head {
+        font-size: 5.4vw;
+        margin-bottom: 1vh;
+        margin-top: 1.5vh;
+    }
+
+    .abt-desc-text {
+        font-size: 4.85vw;
+        width: 81vw;
+        margin-bottom: 3vh;
+    }
+
+    .reg {
+        font-size: 4.3vw;
+        border-radius: 1.3vw;
+        padding: 1.5vw 4vw;
+        width: auto;
+        height: auto;
+    }
 }
