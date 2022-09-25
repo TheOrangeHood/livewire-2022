@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.full-container {
+    overflow-x: hidden;
+}
+
 .navbar {
     width: 100vw;
     display: flex;
@@ -69,6 +73,7 @@
 .page-1-bg {
     background-color: black;
     width: 100vw;
+    overflow-x: hidden;
     height: 100vh;
     background-size: cover;
     background-image: url('../../assets/images/bg_2.png');
@@ -77,12 +82,16 @@
 .page-1 {
     background-image: url('../../assets/images/bg_cover.svg');
     width: 100vw;
+    overflow-y: scroll;
     height: 100vh;
 }
-
+.page1{
+    height: 85vh;
+}
 .page1-text-container {
-    position: relative;
     top: 25vh;
+    width: fit-content;
+    position: relative;
     left: 12vw;
     color: white;
 }
@@ -100,18 +109,18 @@
     margin-bottom: 1vh;
     font-family: "Nightcore demo";
     font-size: 12vw;
-    animation: shade 2s   infinite alternate both;
+    animation: shade 2s infinite alternate both;
     animation-timing-function: ease-in;
     text-shadow: 0px 0px 0 white;
     /* font-weight: bold; */
 }
 
 @keyframes shade {
-    0%{
+    0% {
         text-shadow: 0 0 0 white;
     }
 
-    100%{
+    100% {
         text-shadow: 0 0 30px white;
     }
 }
@@ -125,18 +134,69 @@
     margin-bottom: 2vh;
 }
 
+/* .page1-end{
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+  
+    z-index: 2;
+    background-image: linear-gradient(180deg, rgba(9, 6, 22, 0) 31.77%, #0F0922 100%);
+} */
 .page-2 {
     width: 100vw;
+    font-family: 'Roboto Condensed';
     height: 100vh;
+    background-color: #0F0922;
 }
-
+.abt-img{
+    width: 40vw;
+}
+.abt-content{
+    width: fit-content;
+    position: relative;
+    top: 15vh;
+    left: 12vw;
+    color: white;
+}
+.abt-head{
+    color: #7630FF;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.abt-head-text{
+    font-size: 1.6vw;
+    width: 62vw;
+}
+.abt-desc-head{
+    font-weight: bold;
+    font-size: 2.3vw;
+    color: #7630FF;
+    margin-bottom: 4vh;
+}
+.abt-desc-text{
+    font-size: 1.6vw;
+    width: 33vw;
+    margin-bottom: 6vh;
+    color: white
+}
+.width{
+    width: fit-content;
+}
+.page-2-flex-content{
+    display: flex;
+    position: relative;
+    top: 18vh;
+    margin-top: 3vh;
+}
 .page-3 {
     width: 100vw;
+    background-color: #0F0922;
     height: 100vh;
 }
 
 .page-4 {
     width: 100vw;
+    background-color: #0F0922;
     height: 100vh;
 }
 
