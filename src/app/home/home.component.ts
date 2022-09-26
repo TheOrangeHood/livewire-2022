@@ -55,9 +55,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
-    $('div').each(()=>{
-      console.log('a');
-    })
     $('.page-1-bg').on('mousewheel',()=>{
       var scroll = 0;
       var top = $(window).scrollTop() || 0;
