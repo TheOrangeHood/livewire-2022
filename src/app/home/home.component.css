@@ -827,7 +827,6 @@ h3.bot_head{
     font-size: 1.5vw;
 }
 
-<<<<<<< HEAD
 .arrow {
     width: 15vw;
     height: 25vw;
@@ -853,8 +852,6 @@ h3.bot_head{
 h3.bot_head {
     margin-right: 15vw;
 }
-=======
->>>>>>> d7562611994eb9bd46e4a4a8253eafc6fcee4f7d
 
 @media screen and (max-width: 600px) {
     .nav-icons {
@@ -946,7 +943,6 @@ h3.bot_head {
         height: auto;
     }
 
-<<<<<<< HEAD
     .arrow {
         top: 70vh;
         left: 40vw;
@@ -1039,19 +1035,14 @@ h3.bot_head {
     .page-4{
         padding-bottom: 11vh;
     }
-=======
+
     h2.reg_head{
         font-size: 9.45vw;
-        margin-bottom: 5vh;
     }
     h3.rule-head{
         font-size: 5vw;
-        margin-bottom: 2vh;
     }
 
-    .rules{
-        margin-bottom: 5vh;
-    }
     li.rule{
         font-size: 4vw;
     }
@@ -1115,10 +1106,4 @@ h3.bot_head {
     img.foot_logo{
         width: 25%;
     }
-/* 
-    .footer_rbar{
-        transform: rotate(180deg)
-    }
-*/
->>>>>>> d7562611994eb9bd46e4a4a8253eafc6fcee4f7d
 }
