@@ -55,6 +55,19 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
+    $('div.prize-card').on({
+      mouseenter: function(){
+        $(this).addClass('active');
+        $('h3',$(this)).addClass('active');
+        $('p',$(this)).addClass('active');
+        $('div',$(this)).addClass('active');
+      },mouseleave: function(){
+        $(this).removeClass('active');
+        $('h3',$(this)).removeClass('active');
+        $('p',$(this)).removeClass('active');
+        $('div',$(this)).removeClass('active');
+      }
+    });
     let path = document.querySelector('path')
     let pathLength = document.querySelector('path')?.getTotalLength()
     if (path != null) {
@@ -174,6 +187,7 @@ export class HomeComponent implements OnInit {
         error => { console.log(error) },
       )
   }
+
 
 
 }

@@ -664,6 +664,9 @@ h3.prize-more {
     border-radius: 10px;
     position: relative;
 }
+.prize-card.active{
+    background: white;
+}
 
 .prize1 {
     width: 32%;
@@ -677,6 +680,9 @@ h3.prize {
     color: #FFFFFF;
     margin: 1vw 2vw 0 2vw;
 }
+h3.prize.active{
+    color: #7630FF;
+}
 
 p.prize-cont {
     font-family: 'Poppins';
@@ -688,10 +694,64 @@ p.prize-cont {
     margin: 1vw 2vw 2vw 2vw;
 }
 
-img.prize-icon {
-    width: 35%;
+p.prize-cont.active{
+    color:  rgba(0, 0, 0, 0.5);
+}
+
+.prize-icon {
+    width: 6vw;
+    height: 6vw;
     margin-left: 32.5%;
     margin-top: 2vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prize-icon.active{
+    width: 7vw;
+    height: 7vw;
+    margin-left: 31%;
+}
+#icon1{
+    background-image: url('../../assets/images/question 1.png');
+}
+#icon3{
+    background-image: url('../../assets/images/guitar-instrument 1.png');
+}
+#icon4{
+    background-image: url('../../assets/images/microphone-voice-interface-symbol 1.png');
+}
+#icon5{
+    background-image: url('../../assets/images/festival 1.png');
+}
+#icon6{
+    background-image: url('../../assets/images/Group 2.png');
+}
+#icon2{
+    background-image: url('../../assets/images/stage 1.png');
+}
+#icon7{
+    background-image: url('../../assets/images/plane-tickets 1.png');
+}
+#icon1.active{
+    background-image: url('../../assets/images/Mask group (8).png');
+}
+#icon3.active{
+    background-image: url('../../assets/images/Mask group (10).png');
+}
+#icon4.active{
+    background-image: url('../../assets/images/Mask group (9).png');
+}
+#icon5.active{
+    background-image: url('../../assets/images/Mask group (12).png');
+}
+#icon6.active{
+    background-image: url('../../assets/images/Mask group (7).png');
+}
+#icon2.active{
+    background-image: url('../../assets/images/Mask group (11).png');
+}
+#icon7.active{
+    background-image: url('../../assets/images/Mask group (13).png');
 }
 
 img.music-icon {
