@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit {
     }
     $(window).on('scroll', () => {
       var i = 1;
-      while (i < 28) {
+      while (i < 29) {
         var element = document.getElementById(i.toString());
         var top = window.innerHeight;
         var clh = 0

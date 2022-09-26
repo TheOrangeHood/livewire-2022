@@ -493,7 +493,7 @@ img.foot_logo {
 .line-container {
     position: absolute;
     left: 45%;
-    height: 83%;
+    height: 87%;
     width: 0.5%;
 }
 
@@ -505,19 +505,22 @@ img.foot_logo {
 }
 
 #b1 {
-    top: 23%;
+    top: 20%;
 }
 
 #b2 {
-    top: 43%;
+    top: 37%;
 }
 
 #b3 {
-    top: 63%;
+    top: 53.5%;
 }
 
 #b4 {
-    top: 83%;
+    top: 70.5%;
+}
+#b5 {
+    top: 87%;
 }
 
 #line {
@@ -812,4 +815,7 @@ img.music-icon {
         width: auto;
         height: auto;
     }
+}
+h3.bot_head{
+    margin-right: 15vw;
 }
