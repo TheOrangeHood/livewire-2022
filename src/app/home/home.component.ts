@@ -55,6 +55,40 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
+    $('div').each(()=>{
+      console.log('a');
+    })
+    $('.page-1-bg').on('mousewheel',()=>{
+      var scroll = 0;
+      var top = $(window).scrollTop() || 0;
+      var h = $(window).height() || 0;
+      scroll = h - (top + h / 5);
+      $('#w4').height(scroll);
+    })
+    $('.page-2').on('mousewheel',()=>{
+      var scroll = 0;
+      var top = $(window).scrollTop() || 0;
+      var off = $('.page-2').offset()?.top || 0;
+      var h = $('.page-2').height() || 0;
+      scroll = h - (top + h / 5 - off);
+      $('#w1').height(scroll);
+    })
+    $('.page-3').on('mousewheel',()=>{
+      var scroll = 0;
+      var top = $(window).scrollTop() || 0;
+      var off = $('.page-3').offset()?.top || 0;
+      var h = $('.page-3').height() || 0;
+      scroll = h - (top + h / 5 - off);
+      $('#w2').height(scroll);
+    })
+    $('.page-4').on('mousewheel',()=>{
+      var scroll = 0;
+      var top = $(window).scrollTop() || 0;
+      var off = $('.page-4').offset()?.top || 0;
+      var h = $('.page-4').height() || 0;
+      scroll = h - (top + h / 5 - off);
+      $('#w3').height(scroll);
+    })
     var counter = 1;
     var int = setInterval(function(){
         $(".arrow-head").toggleClass('active');

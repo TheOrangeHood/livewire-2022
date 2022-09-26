@@ -157,6 +157,7 @@
     font-family: 'Roboto Condensed';
     padding-bottom: 35vh;
     background: linear-gradient(#0F0922 85%, #000000);
+    position: relative;
 }
 
 .abt-img {
@@ -217,7 +218,6 @@
     width: 100vw;
     background: linear-gradient(#000000 85%, #0F0922);
     padding-bottom: 20vh;
-    padding-top: 5vh;
     position: relative;
 }
 
@@ -501,6 +501,33 @@ img.foot_logo {
     position: absolute;
     left: 44.3%;
     width: 2vw;
+    background-color: #0F0922;
+}
+
+.ball1 {
+    position: absolute;
+    left: 89.15vw;
+    width: 2vw;
+}
+
+#b6 {
+    top: 87vh;
+    z-index: 7;
+    background-color: #0F0922;
+}
+
+#b7 {
+    top: 75%;
+    background-color: #0F0922;
+}
+
+#b8 {
+    top: 73%;
+    background-color: #000000;
+}
+
+#b9 {
+    top: 68%;
     background-color: #0F0922;
 }
 
@@ -897,4 +924,54 @@ h3.bot_head{
 }
 .arrow-head.active{
     background-image: url('../../assets/images/Vector 1.png');
+}
+.line{
+    position: absolute;
+    left: 89.8vw;
+    width: 0.32%;
+    height: 120%;
+}
+#line1{
+    height: 120%;
+}
+.line-cont{
+    height: 100%;
+    position: relative;
+    background-image: url('../../assets/images/V.png');
+}
+.window{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+#w1{
+    background-color: #0F0922;
+}
+#w2{
+    background-color: #000000;
+}
+#w3{
+    background-color: #0F0922;
+}
+#w4{
+    background-color: #0F0922;
+}
+img.side-line{
+    width: 100%;
+}
+#line4{
+    z-index: 5;
+    top: 22vh;
+    height: 130%;
+}
+#line2{
+    top: 0px;
+}
+img.curve{
+    width: 45vw;
+    left: 45.1vw;
+    position: absolute;
+    bottom: 0px;
+    background-color: #0F0922
 }
