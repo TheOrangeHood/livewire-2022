@@ -902,11 +902,16 @@ h3.bot_head{
 
     h2.reg_head{
         font-size: 9.45vw;
+        margin-bottom: 5vh;
     }
     h3.rule-head{
         font-size: 5vw;
+        margin-bottom: 2vh;
     }
 
+    .rules{
+        margin-bottom: 5vh;
+    }
     li.rule{
         font-size: 4vw;
     }
