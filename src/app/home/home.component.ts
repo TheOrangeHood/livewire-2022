@@ -28,7 +28,18 @@ export class HomeComponent implements OnInit {
     original_composition: ""
   }
 
+  band2: any = {
+    city: "",
+    band_name: "",
+    genre: "",
+    emailid: "",
+    past_achievments: "",
+    no_of_members: null,
+    bandmembers: "",
+    original_composition: ""
+  }
 
+  window = window
   past_ach: string = '';
   city: string = '';
   band_name: string = '';
@@ -102,11 +113,11 @@ export class HomeComponent implements OnInit {
       alert("Please enter your band's name");
       return;
     }
-    if (this.mem_contact1 == "" || this.mem_contact1.length!=10 ) {
+    if (this.mem_contact1 == "" || this.mem_contact1.length != 10 ) {
       alert("Please enter 1st member's 10-digit contact number");
       return;
     }
-    if (this.mem_contact2 == ""|| this.mem_contact2.length!=10) {
+    if (this.mem_contact2 == "" || this.mem_contact2.length != 10 ) {
       alert("Please enter 2nd member's 10-digit contact number");
       return;
     }
@@ -149,10 +160,19 @@ export class HomeComponent implements OnInit {
 
   post_band = () => {
     console.log('posted')
-    this.http.post('https://veronica.moodi.org/livewire/create',this.band)
-    .subscribe((data)=>{
-      console.log(data)
-    })
+    this.http.post('https://veronica.moodi.org/livewire/create', this.band)
+      .subscribe(data => {
+        console.log(data)
+        this.band2 = data
+        console.log(this.band2.band_name)
+        if (this.band2.band_name == this.band.band_name) {
+          alert('Registered successfully')
+          window.location.reload();
+        }
+
+      },
+        error => { console.log(error) },
+      )
   }
 
 

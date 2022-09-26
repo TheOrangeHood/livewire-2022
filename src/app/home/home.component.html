@@ -3,17 +3,17 @@
   <!-- Navbar starts -->
   <div class="navbar">
     <div class="mi-logo">
-      <img src="../../assets/images/moodi-logo-white 1.png" alt="" class="logo">
+      <img src="../../assets/images/moodi-logo-white 1.png" alt="" class="logo" (click)='page1.scrollIntoView({behavior:"smooth"})'>
     </div>
     <div class="nav-icons">
-      <div class="nav-icon">about us</div>
-      <div class="nav-icon">past winners</div>
-      <div class="nav-icon">prizes</div>
-      <div class="nav-icon">schedule</div>
-      <div class="nav-icon">partners</div>
+      <div class="nav-icon" (click)='page2.scrollIntoView({behavior:"smooth"})' >about us</div>
+      <div class="nav-icon" (click)='page3.scrollIntoView({behavior:"smooth"})'>past winners</div>
+      <div class="nav-icon" (click)='page4.scrollIntoView({behavior:"smooth"})'>prizes</div>
+      <div class="nav-icon" (click)='page5.scrollIntoView({behavior:"smooth"})'>schedule</div>
+      <div class="nav-icon" (click)='page7.scrollIntoView({behavior:"smooth"})'>partners</div>
     </div>
     <div class="register-btn">
-      <button class="register">
+      <button class="register" (click)='page6.scrollIntoView({behavior:"smooth"})'>
         REGISTER
       </button>
     </div>
@@ -23,7 +23,7 @@
 
 
   <!-- Page 1 begins -->
-  <div class="page-1-bg">
+  <div class="page-1-bg" #page1>
 
     <div class="page-1">
 
@@ -56,7 +56,7 @@
 
 
   <!-- Page 2 begins (about livewire) -->
-  <div class="about-livewire-page page-2">
+  <div class="about-livewire-page page-2" #page2>
     <div class="abt-content">
       <div class="abt-head" id="1">ABOUT LIVEWIRE</div>
       <div class="abt-head-text" id="2">
@@ -91,7 +91,7 @@
 
 
     <!-- Page 3 begins (past winners) -->
-    <div class="page-3 past-winners-page">
+    <div class="page-3 past-winners-page" #page3>
       <h2 class="sched-head" id="7">PAST WINNERS</h2>
       <div class="top-shine" id="8">
         <div class="shine-cont">
@@ -128,7 +128,7 @@
 
 
     <!-- Page 4 begins (prizes)-->
-    <div class="page-4 prizes-page">
+    <div class="page-4 prizes-page" #page4>
         <h2 class="sched-head part-head" id="10">PRIZES</h2>
         <div class="prize-top" id="11">
           <div class="prize-card">
@@ -183,7 +183,7 @@
 
 
   <!-- Page 5 begins (shedule) -->
-  <div class="page-5 shedule-page">
+  <div class="page-5 shedule-page" #page5>
     <div class="line-container">
       <svg id="line" viewBox="0 0 25 9409" fill="none" preserveAspectRatio="xMidYMax meet">
         <path class="path" d="M12.5 0.5V9408.5" stroke="white" stroke-width="25" />
@@ -238,7 +238,7 @@
 
 
   <!-- Page 6 begins (form) -->
-  <div class="page-6 register-form">
+  <div class="page-6 register-form" #page6>
     <h2 class="reg_head" id="18">REGISTER</h2>
     <h3 class="rule-head" id="19">RULES</h3>
     <ul class="rules" id="20">
@@ -293,8 +293,8 @@
               placeholder="Member Name 1" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem1_contact" [(ngModel)] = "mem_contact1" id="mem1_contact" type="phone"
-              placeholder="Member Contact 1" />
+            <input class="form-control valid inp no-arrow" name="mem1_contact" [(ngModel)] = "mem_contact1" id="mem1_contact" type="phone"
+              placeholder="Member Contact 1" pattern="[1-9]{1}[0-9]{9}" />
           </div>
         </div>
         <div class="info_col">
@@ -303,8 +303,8 @@
               placeholder="Member Name 2" />
           </div>
           <div class="form-group info_form">
-            <input class="form-control valid inp" name="mem2_contact" [(ngModel)] = "mem_contact2" id="mem2_contact" type="phone"
-              placeholder="Member Contact 2" />
+            <input class="form-control valid inp no-arrow" name="mem2_contact" [(ngModel)] = "mem_contact2" id="mem2_contact" type="phone"
+              placeholder="Member Contact 2"  pattern="[1-9]{1}[0-9]{9}"/>
           </div>
         </div>
         <div class="info_col">
@@ -315,7 +315,7 @@
         </div>
         <div class="reg_btn text-center" (click)="register()">
           <a class="boxed-btn3 wow fadeInUp" style="color: white;" data-wow-duration="1s"
-            data-wow-delay=".6s">REGISTER</a>
+            data-wow-delay=".6s" type="submit">REGISTER</a>
         </div>
       </div>
     </form>
@@ -326,7 +326,7 @@
 
 
   <!-- Page 7 begins (partners) -->
-  <div class="page-7 partners">
+  <div class="page-7 partners" #page7>
     <h2 class="sched-head part-head" id="25">PARTNERS</h2>
     <div class="partner" id="26">
       <img src="../../assets/images/delhi_head.jpg" alt="" class="partner_img">
