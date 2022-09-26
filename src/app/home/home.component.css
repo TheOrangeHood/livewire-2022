@@ -778,14 +778,15 @@ img.music-icon {
     color: white;
     width: 15vw;
     height: 4vw;
+    transition: ease-out .2s;
 }
 
 .reg:hover {
     background-color: white;
     color: #7630FF;
+    transform: scale(1.25) translateX(1.5vw);
+    font-size: 1.5vw;
 }
-
-
 @media screen and (max-width: 600px) {
     .nav-icons {
         display: none;
