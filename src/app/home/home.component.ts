@@ -55,6 +55,15 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
+    var counter = 1;
+    var int = setInterval(function(){
+        $(".arrow-head").toggleClass('active');
+        if (counter === 3){
+            counter = 1; // If counter = 3, set it back to 1 for next loop
+        } else {
+            counter++; // Else, add 1 to the counter
+        }
+    }, 300);
     $('div.prize-card').on({
       mouseenter: function(){
         $(this).addClass('active');
