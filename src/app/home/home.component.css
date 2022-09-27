@@ -1232,7 +1232,8 @@ img.curve {
     }
 
     h2.sched-head {
-        font-size: 6vw;
+        /* font-size: 6vw; */
+        font-size: 9.25vw;
     }
 
     .partner {
