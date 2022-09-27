@@ -477,7 +477,7 @@ p.foot-cont {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.65vw;
+    font-size: 1.25vw;
     color: #FFFFFF;
     margin: 0;
 }
@@ -1013,11 +1013,14 @@ img.curve{
     }
 
     .reg {
-        font-size: 4.3vw;
+        font-size: 6.3vw;
         border-radius: 1.3vw;
         padding: 1.5vw 4vw;
         width: auto;
         height: auto;
+        padding: 1.3vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
     }
 
 h3.bot_head{
@@ -1103,6 +1106,8 @@ h3.bot_head{
 
     .prize-top{
         margin-left: 5vw;
+        justify-content: left;
+        /* width: 23.5%; */
     }
 
     .prize-card{
@@ -1186,11 +1191,11 @@ h3.bot_head{
         display: inline-block;
     }
     h3.foot-head{
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     p.foot-cont{
-        font-size: 2.5vw;
+        font-size: 4.5vw;
         margin-bottom: 2.5vh;
     }
 
@@ -1202,6 +1207,10 @@ h3.bot_head{
         justify-content: left;
     }
     img.foot_logo{
-        width: 25%;
+        width: 35%;
+    }
+    .reg_btn1{
+        width: 75%;
+        text-align:center;
     }
 }
