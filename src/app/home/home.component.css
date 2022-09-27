@@ -691,6 +691,7 @@ h3.prize-more {
     justify-content: center;
     border-radius: 10px;
     position: relative;
+    transition: 0.5s;
 }
 
 .prize-card.active {
@@ -735,6 +736,7 @@ p.prize-cont.active {
     margin-top: 2vw;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0.5s;
 }
 
 .prize-icon.active {
@@ -931,6 +933,15 @@ img.curve{
     background-color: #0F0922
 }
 @media screen and (max-width: 600px) {
+    .line{
+        display: none;
+    }
+    img.curve{
+        display: none;
+    }
+    img.ball1{
+        display: none;
+    }
     .nav-icons {
         display: none;
     }
