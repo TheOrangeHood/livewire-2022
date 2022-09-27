@@ -1011,6 +1011,16 @@ img.curve{
         left: 12vw;
     }
 
+    p.cont{
+        font-size: 2.85vw;
+    }
+    p.sub_head{
+        font-size: 5.2vw;
+    }
+    .left-bars{
+        display: none;
+    }
+
     .abt-desc-head {
         font-size: 5.4vw;
         margin-bottom: 1vh;
@@ -1024,7 +1034,7 @@ img.curve{
     }
 
     .reg {
-        font-size: 6.3vw;
+        font-size: 5.3vw;
         border-radius: 1.3vw;
         padding: 1.5vw 4vw;
         width: auto;
@@ -1097,6 +1107,9 @@ h3.bot_head{
         font-size: 9.25vw;
     }
 
+    #line{
+        height: 109%;
+    }
     .page-3 {
         padding-bottom: 5vh;
         height: 50vh;
