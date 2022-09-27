@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.mob-scroll-schedule::-webkit-scrollbar {
+    display: none;
+}
+
+.mob-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.mob-scroll-schedule {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.mob-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 .no-arrow {
     -moz-appearance: textfield;
 }
@@ -1030,13 +1054,15 @@ img.curve {
         left: 12vw;
     }
 
-    p.cont{
+    p.cont {
         font-size: 2.85vw;
     }
-    p.sub_head{
+
+    p.sub_head {
         font-size: 5.2vw;
     }
-    .left-bars{
+
+    .left-bars {
         display: none;
     }
 
@@ -1130,9 +1156,10 @@ img.curve {
         font-size: 9.25vw;
     }
 
-    #line{
+    #line {
         height: 109%;
     }
+
     .page-3 {
         padding-bottom: 5vh;
         height: 50vh;
