@@ -828,10 +828,11 @@ img.music-icon {
     transition: ease-out .2s;
 }
 
-h3.bot_head{
+h3.bot_head {
     margin-right: 15vw;
 }
-.arrow{
+
+.arrow {
     width: 15vw;
     height: 25vw;
     position: absolute;
@@ -839,16 +840,19 @@ h3.bot_head{
     top: 60vh;
     z-index: 5;
 }
-.arrow-head{
+
+.arrow-head {
     background-image: url('../../assets/images/Vector 5 (1).png');
     background-size: cover;
     width: 100%;
     height: 6.5vw;
     margin-top: -4.2vw;
 }
-.arrow-head.active{
+
+.arrow-head.active {
     background-image: url('../../assets/images/Vector 1.png');
 }
+
 .reg:hover {
     background-color: white;
     color: #7630FF;
@@ -882,66 +886,81 @@ h3.bot_head {
     margin-right: 15vw;
 }
 
-.line{
+.line {
     position: absolute;
     left: 89.8vw;
     width: 0.32%;
     height: 120%;
 }
-#line1{
+
+#line1 {
     height: 120%;
 }
-.line-cont{
+
+.line-cont {
     height: 100%;
     position: relative;
     background-image: url('../../assets/images/V.png');
 }
-.window{
+
+.window {
     position: absolute;
     height: 100%;
     width: 100%;
     bottom: 0;
 }
-#w1{
+
+#w1 {
     background-color: #0F0922;
 }
-#w2{
+
+#w2 {
     background-color: #000000;
 }
-#w3{
+
+#w3 {
     background-color: #0F0922;
 }
-#w4{
+
+#w4 {
     background-color: #0F0922;
 }
-img.side-line{
+
+img.side-line {
     width: 100%;
 }
-#line4{
+
+#line4 {
     z-index: 5;
     top: 22vh;
     height: 130%;
 }
-#line2{
+
+#line2 {
     top: 0px;
 }
-img.curve{
+
+img.curve {
     width: 45vw;
     left: 45.1vw;
     position: absolute;
     bottom: 0px;
     background-color: #0F0922
 }
+
 @media screen and (max-width: 600px) {
-    .line{
+    .line {
         display: none;
     }
-    img.curve{
+
+    img.curve {
         display: none;
     }
-    img.ball1{
+
+    img.ball1 {
         display: none;
     }
+
     .nav-icons {
         display: none;
     }
@@ -1034,27 +1053,31 @@ img.curve{
         padding-right: 6vw;
     }
 
-h3.bot_head{
-    margin-right: 15vw;
-}
-.arrow{
-    width: 15vw;
-    height: 25vw;
-    position: absolute;
-    left: 62vw;
-    top: 60vh;
-    z-index: 5;
-}
-.arrow-head{
-    background-image: url('../../assets/images/Vector 5 (1).png');
-    background-size: cover;
-    width: 100%;
-    height: 6.5vw;
-    margin-top: -4.2vw;
-}
-.arrow-head.active{
-    background-image: url('../../assets/images/Vector 1.png');
-}
+    h3.bot_head {
+        margin-right: 15vw;
+    }
+
+    .arrow {
+        width: 15vw;
+        height: 25vw;
+        position: absolute;
+        left: 62vw;
+        top: 60vh;
+        z-index: 5;
+    }
+
+    .arrow-head {
+        background-image: url('../../assets/images/Vector 5 (1).png');
+        background-size: cover;
+        width: 100%;
+        height: 6.5vw;
+        margin-top: -4.2vw;
+    }
+
+    .arrow-head.active {
+        background-image: url('../../assets/images/Vector 1.png');
+    }
+
     .arrow {
         top: 70vh;
         left: 40vw;
@@ -1110,71 +1133,80 @@ h3.bot_head{
         /* overflow-x: scroll; */
     }
 
-    .mob-scroll-schedule{
+    .mob-scroll-schedule {
         width: 100vw;
         overflow-x: scroll;
     }
 
-    .prize-top{
+    .prize-top {
         margin-left: 5vw;
-        justify-content: left;
+        /* justify-content: left; */
         /* width: 23.5%; */
     }
 
-    .prize-card{
+    .prize-card {
         height: 76.5vw;
         width: 58vw;
     }
 
-    .prize-icon{
+    .prize-icon {
         width: 20vw;
         margin-left: 19vw;
         height: 20vw;
     }
 
-    h3.prize{
+    .prize-icon.active {
+        width: 22vw;
+        margin-left: 18vw;
+        height: 22vw;
+    }
+
+    h3.prize {
         margin: 5vw 2vw 0 3vw;
         font-size: 6.5vw;
     }
 
-    h3.prize-more{
+    h3.prize-more {
         font-size: 15.2vw;
     }
 
-    p.prize-cont{
+    p.prize-cont {
         margin: 6vw 2vw 2vw 2vw;
         font-size: 4.2vw;
     }
 
-    .page-4{
+    .page-4 {
         padding-bottom: 11vh;
     }
 
-    h2.reg_head{
+    h2.reg_head {
         font-size: 9.45vw;
     }
-    h3.rule-head{
+
+    h3.rule-head {
         font-size: 5vw;
     }
 
-    li.rule{
+    li.rule {
         font-size: 4vw;
     }
 
-    .info_col{
+    .info_col {
         display: block;
     }
-    input.inp{
+
+    input.inp {
         width: 190%;
         height: 3.5vh;
         margin-bottom: 1vh;
     }
-    textarea.inp{
+
+    textarea.inp {
         width: 96%;
         height: 30vw;
     }
 
-    .reg_btn{
+    .reg_btn {
         width: 18vw;
         height: 2vw;
         margin: auto;
@@ -1182,46 +1214,50 @@ h3.bot_head{
         font-size: 5vw;
     }
 
-    .page-7{
+    .page-7 {
         padding-top: 10vh;
     }
 
-    h2.sched-head{
+    h2.sched-head {
         font-size: 6vw;
     }
 
-    .partner{
+    .partner {
         display: inline-block;
     }
-    img.partner_img{
+
+    img.partner_img {
         width: 46%;
         margin: 1vw;
     }
 
-    .foot{
+    .foot {
         display: inline-block;
     }
-    h3.foot-head{
+
+    h3.foot-head {
         font-size: 7vw;
     }
 
-    p.foot-cont{
+    p.foot-cont {
         font-size: 4.5vw;
         margin-bottom: 2.5vh;
     }
 
-    img.left-line{
+    img.left-line {
         width: 30%;
     }
 
-    .foot-logos{
+    .foot-logos {
         justify-content: left;
     }
-    img.foot_logo{
+
+    img.foot_logo {
         width: 35%;
     }
-    .reg_btn1{
+
+    .reg_btn1 {
         width: 75%;
-        text-align:center;
+        text-align: center;
     }
 }
