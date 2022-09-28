@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
   band_name: string = '';
   genre: string = '';
   emailid: string = '';
-  no_of_members: number = 0;
+  no_of_members: number;
   mem_name1: string = '';
   mem_name2: string = '';
   mem_contact1: string = '';
