@@ -300,7 +300,7 @@ h2.sched-head {
 .schedule {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 55%;
     height: 18vw;
     margin: 7.5vh;
     margin-left: 18vw;
@@ -358,7 +358,7 @@ button.ticket:hover {
 }
 
 img.right-sched {
-    width: 50%;
+    width: 34%;
     height: inherit;
 }
 
