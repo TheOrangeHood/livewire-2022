@@ -463,7 +463,8 @@ textarea.inp {
 }
 
 img.partner_img {
-    width: 19%;
+    /* width: 19%; */
+    width: 12vw;
 }
 
 .part-head {
