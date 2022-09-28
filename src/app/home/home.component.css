@@ -340,6 +340,7 @@ button.ticket {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
+    display: none;
     font-size: 1.6vw;
     line-height: 1.85vw;
     align-items: center;
